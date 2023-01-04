@@ -57,7 +57,7 @@ Testing is done with Jest. To run test, use the command
 <img src="src/client/media/home.png" width=500>
 
 ### Result:
-<img src="src/client/media/Result.png" width=500>
+<img src="src/client/media/result.png" width=500>
 
 ### Save:
 <img src="src/client/media/save.png" width=500>
