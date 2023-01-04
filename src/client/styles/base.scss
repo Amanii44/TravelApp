@@ -1,0 +1,60 @@
+$font-stack: "Roboto Mono", monospace;
+$font-secondary: "Indie Flower", cursive;
+
+html,
+body {
+  height: 100%;
+}
+
+head {
+  height: 10vh;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../media/bac.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-stack;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  main {
+    flex: 1 0 auto;
+  }
+}
+
+#search-section {
+  height: 70vh;
+}
+
+#log-section {
+}
+
+.cta {
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: mediumaquamarine;
+  &:hover {
+    background-color: mediumpurple;
+  }
+}
+
+footer {
+  flex-shrink: 0;
+  height: 10vh;
+  margin-top: 10vh;
+}
+
+h1 {
+  font-family: $font-secondary;
+}

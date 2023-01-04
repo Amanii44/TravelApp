@@ -1,0 +1,22 @@
+footer {
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: mediumaquamarine;
+  padding: 1.5rem 0;
+  color: white;
+  margin: 0;
+  border-radius: 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .social i {
+    color: white;
+    font-size: 1.5rem;
+    width: 2rem;
+    &:hover {
+      color: mediumpurple;
+    }
+  }
+}

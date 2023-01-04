@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Travel Journal</title>
+    <link href="../styles/all.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f49ef79a52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <nav class="navbar__menu">
+        <p>
+          <a href="#search-section" class="menu__link" id="company-brand-nav"
+            ><i class="fas fa-map-pin"></i> Travel Journal</a
+          >
+        </p>
+        <p>
+          <a href="#log-section" class="menu__link" id="trip-log-nav">My Log</a>
+        </p>
+      </nav>
+    </header>
+
+    <main>
+      <section id="search-section">
+        <div class="hero-quote">
+          <h1><span>Do you plan to travel?</span></h1>
+          <h2><span> Log it.</span></h2>
+        </div>
+
+        <form class="trip-details" onsubmit="return Client.handleFind(event)">
+          <div class="inputs">
+            <input
+              type="text"
+              name="destination"
+              id="destination"
+              class="dark"
+              placeholder=" Type a city"
+              autofocus
+              required
+            />
+            <input type="date" name="date" id="date" class="dark" required />
+          </div>
+
+          <button type="submit" class="cta">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </section>
+
+      <section id="search-results"></section>
+
+      <section id="log-section">
+        <div id="saved-trips"></div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="social">
+        <a href="https://github.com/Amanii44"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p>This Travel App made in 2022</p>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
